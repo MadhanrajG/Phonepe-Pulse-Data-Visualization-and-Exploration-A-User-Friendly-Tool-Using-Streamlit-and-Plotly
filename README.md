@@ -14,11 +14,11 @@ import sqlite3
 import streamlit as st
 
 # Connecting to the SQLite database
-conn = sqlite3.connect(r"C:\swathi\git\Pulse.db")
+conn = sqlite3.connect(r"C:\madhan\git\Pulse.db")
 mycursor = conn.cursor()
 
 # Setting up the Streamlit page
-logo = Image.open("C:\swathi\git\logo.png")
+logo = Image.open("C:\madhan\git\logo.png")
 st.set_page_config(page_title="Phonepe Pulse", page_icon=logo, layout='wide')
 
 # Creating the sidebar menu
@@ -27,7 +27,7 @@ choice = st.sidebar.selectbox("Menu", Menu)
 
 # Home Section
 if choice == "Home":
-    img1 = Image.open('C:\swathi\git\phonpe.jpg')
+    img1 = Image.open('C:\madhan\git\phonpe.jpg')
     st.image(img1)
     st.markdown('# :violet[Data Visualization and Exploration]')
     st.markdown("## :violet[A User-Friendly Tool Using Streamlit and Plotly]")
@@ -41,7 +41,7 @@ if choice == "Home":
         st.markdown('### :green[Overview:]  In this streamlit web app you can visualize the phonepe pulse data and gain lot of insights on transactions, number of users, top 10 state, district, pincode and which brand has most number of users and so on. Bar charts, Pie charts and Geo map visualization are used to get some insights."')
     
     with col2:
-        img2 = Image.open('C:\swathi\git\img2.png')
+        img2 = Image.open('C:\madhan\git\img2.png')
         st.image(img2)
 
 # Top Charts Section
